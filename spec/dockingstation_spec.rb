@@ -19,4 +19,9 @@ describe DockingStation do
     end
   end
 
+  describe "dock" do
+    it 'should dock bike at station' do
+      expect(DockingStation.new).to respond_to(:dock)
+    end
+  end
 end
