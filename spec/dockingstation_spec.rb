@@ -8,4 +8,15 @@ describe DockingStation do
     end
   end
 
+  describe "bike released" do
+    bike = DockingStation.new.release_bike
+    it 'should release an instance of the bike class' do
+      expect(bike.class).to eq Bike
+    end
+
+    it 'should also be working' do
+      expect(bike.working?).to eq true
+    end
+  end
+
 end
